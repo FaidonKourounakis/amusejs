@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Simple audio wrapper for websites!",
   "main": "amuse.js",
+  "types": "amuse.d.ts",
   "scripts": {
     "build": "rm -rf ./dist && parcel ./src/amuse.js "
   },
   "author": "Faidon Kourounakis <faidon.kourounakis@gmail.com>",
-  "license": "MIT",
+  "license": "MIT"
 }
