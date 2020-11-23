@@ -1,5 +1,8 @@
 # Amuse.js 
-Simple \<audio> wrapper library to play sounds/music, using async/await on the frontend!
+Simple **\<audio> wrapper library** to play sounds/music, using async/await on the frontend!  
+
+Takes away the pain of coding a **seek bar** for your music player, manages songs in a way that **doesn't require reloading** them, with plenty of **event to listen to** and more!
+Now with **typescript support**! How cool is that?  
 ## Install
 ```bash
 npm install amuse --save
