@@ -1,5 +1,5 @@
 # Amuse.js 
-Simple **\<audio> wrapper library** to play sounds/music, using async/await on the frontend!  
+**Simple `<audio>` wrapper library** to play sounds/music, using async/await on the frontend!  
 
 Takes away the pain of coding a **seek bar** for your music player, manages songs in a way that **doesn't require reloading** them, with plenty of **event to listen to** and more!
 Now with **typescript support**! How cool is that?  
@@ -8,7 +8,7 @@ Now with **typescript support**! How cool is that?
 npm install amuse --save
 ```
 ```javascript
-import Amuse from 'amuse';
+import Amuse from 'amusejs';
 ```
 ## Quickstart
 Initialise amuse player without any songs (aka muses) and add your first muse:
@@ -27,10 +27,10 @@ let amuse = new Amuse(srd, id, meta, load);
 await amuse.play();
 ```
 
-`id`: (required) Unique identifier of muse (song or sound) which you'll need later on.
-`src`: URL to mp3 file.
-`meta`: (optional) object with meta data of mp3 file (or really whatever data you wanna store). 
-`load`: (optional, defaults to true) if true loads audio file upon muse addition, if false loads audio file later (automatically when played or manually ...read further).
+- `id`: (required) Unique identifier of muse (song or sound) which you'll need later on.
+- `src`: URL to mp3 file.
+- `meta`: (optional) object with meta data of mp3 file (or really whatever data you wanna store). 
+- `load`: (optional, defaults to true) if true loads audio file upon muse addition, if false loads audio file later (automatically when played or manually ...read further).
 
 ## Methods
 #### Muses
@@ -48,7 +48,7 @@ Removes muse by `id`, stops it if its the current one and selects the next muse 
 ```javascript
 amuse.geMuseById(id); // of the few sync methods
 ```
-Returns muse object that contains `src`, `id`, `meta` and the corresponding `audio` \<audio> element. 
+Returns muse object that contains `src`, `id`, `meta` and the corresponding `<audio>` element. 
 
 ```javascript
 await amuse.empty(); 
